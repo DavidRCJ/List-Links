@@ -1,0 +1,73 @@
+// styles.scss
+$primary-color: #4CAF50;
+$background-color: #f4f4f9;
+$text-color: #333;
+$container-shadow: rgba(0, 0, 0, 0.1);
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+.profile-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 6px $container-shadow;
+  border-radius: 8px;
+
+  .profile-header {
+    text-align: center;
+    padding: 20px;
+
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid $primary-color;
+    }
+
+    .profile-name {
+      font-size: 1.8rem;
+      margin: 15px 0;
+      color: $primary-color;
+    }
+
+    .profile-description {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  }
+
+  .profile-links {
+    margin-top: 20px;
+
+    .links-title {
+      font-size: 1.2rem;
+      color: $text-color;
+    }
+
+    .links-list {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin: 10px 0;
+
+        a {
+          text-decoration: none;
+          color: $primary-color;
+          font-weight: bold;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
